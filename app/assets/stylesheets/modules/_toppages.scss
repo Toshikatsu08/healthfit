@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header {
+  background-color: black;
+  padding: 10px;
+  &__logo {
+    width: 80px;
+      &--topButton {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+  }
+}
+
+.TopContents{
+  position: relative;
+  background-color: black;
+  &__message{
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    color:black;
+    font-size: 80px;
+    font-weight: bold;
+  }
+}
+.Main {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  &__Contents {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 5px;
+  &__buttons{
+    display: flex;
+  }
+  }
+}
+
+.Form {
+  display:flex;
+  flex-direction: column;
+  width: 30%;
+  input {
+    padding: 5px;
+    margin: 15px 0px;
+  }
+  &__submit{
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+  }
+  &__login{
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
