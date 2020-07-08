@@ -1,0 +1,22 @@
+.Header
+  .Header__logo
+    = link_to '#',class: "Header__logo--topButton" do
+      HealthFit
+.TopContents      
+  .TopContents__BackgroundImage
+    = image_tag 'image.jpg', alt: 'run', height: '100%', width: '100%', class: 'image'
+  .TopContents__message
+    毎日を楽しく
+.Main
+  .Main__Contents
+    %form.Form
+      %input.Form__name{type: 'text', placeholder: '名前'}
+      %input.Form__email{type: 'email', placeholder: 'email'}
+      %input.Form__length{type: 'number', placeholder: '身長(cm)'}
+      %input.Form__weight{type: 'number', placeholder: '体重(kg)'}
+      %input.Form__age{type: 'number',  placeholder: '年齢'}
+      %input.Form__goal{type: 'number', placeholder: '目標(kg)'}
+      %input.Form__goalDate{type: 'date'}
+    .Main__buttons    
+      %input.Form__submit{type: 'submit', value: '始める'}
+      %input.Form__login{type: 'button', value: 'ログイン'}
