@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'toppages/index'
   root "toppages#index"
+  get 'users', to: 'users#index'
 end

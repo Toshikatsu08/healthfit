@@ -1,6 +1,6 @@
 .Header
   .Header__logo
-    = link_to '#',class: "Header__logo--topButton" do
+    = link_to root_path, class: "Header__logo--topButton" do
       HealthFit
 .TopContents      
   .TopContents__BackgroundImage
@@ -17,6 +17,8 @@
       %input.Form__age{type: 'number',  placeholder: '年齢'}
       %input.Form__goal{type: 'number', placeholder: '目標(kg)'}
       %input.Form__goalDate{type: 'date'}
-    .Main__buttons    
-      %input.Form__submit{type: 'submit', value: '始める'}
-      %input.Form__login{type: 'button', value: 'ログイン'}
+    .Main__buttons
+      = link_to users_path do
+        %input.Form__submit{url: 'users_path', type: 'submit', value: '始める'}
+      = link_to users_path do
+        %input.Form__login{type: 'button', value: 'ログイン'}
