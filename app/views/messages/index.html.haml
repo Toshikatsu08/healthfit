@@ -1,2 +1,14 @@
-%h1 Messages#index
-%p Find me in app/views/messages/index.html.haml
+.Wrapper
+  .Wrapper__ImageContents
+    .Wrapper_ImageContent
+      = image_tag 'image.jpg', alt: 'run', height: '100%', width: '100%', class: 'image'
+      = image_tag 'image.jpg', alt: 'run', height: '100%', width: '100%', class: 'image'
+      = image_tag 'image.jpg', alt: 'run', height: '100%', width: '100%', class: 'image'
+      = image_tag 'image.jpg', alt: 'run', height: '100%', width: '100%', class: 'image'
+.MessageForm
+  = form_with html: {class: "FormText"}, local: true do |f|
+    = f.text_field :content, class: 'FormText__inputText', placeholder: 'メッセージを入力'
+    = f.label :image, class: 'FormText__image' do
+      = icon('far', 'image', class: 'FormText__icon')
+      = f.file_field :image, class: 'FormText__file'
+    = f.submit '送信', class: 'FormText__submitBtn'

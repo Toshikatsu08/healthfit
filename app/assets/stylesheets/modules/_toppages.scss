@@ -1,24 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-.Header {
-  background-color: black;
-  padding: 10px;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  &__topButton {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-  }
-  &__baButton {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-  }
-}
 
 .TopContents{
   position: relative;

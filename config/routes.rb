@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'messages/index'
+  devise_for :users
   root "toppages#index"
+  resources :messages, only: [:index, :show]
   get 'users', to: 'users#index'
 end

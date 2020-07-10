@@ -1,0 +1,53 @@
+.Wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  &__ImageContents {
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    overflow: scroll;
+  }
+  &__ImageContent {
+    height: 680px;
+    width: 383px;
+  }
+}
+
+.image {
+  padding: 10px;
+}
+
+.MessageForm {
+  height: 90px;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FormText {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  &__file {
+    display: none;
+  }
+  &__inputText {
+    height: 50px;
+    width: 80%;
+  }
+  &__icon {
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    font-size: 25px;
+  }
+  &__submitBtn {
+    width: 80px;
+    padding: 10px;
+    margin-left: 5px;
+  }
+}
