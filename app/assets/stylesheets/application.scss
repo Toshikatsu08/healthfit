@@ -1,3 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header {
+  background-color: black;
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__topButton {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+}
+.RightGroup{
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  &__baButton {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  &__icon {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+  }
+}
 @import "reset";
 @import "modules/toppages";
 @import "font-awesome-sprockets";
