@@ -1,5 +1,18 @@
 class UsersController < ApplicationController
-  def index
-    @chart = [['7月9日', 70], ['7月10日', 75], ['7月11日', 80],['7月12日', 65]]
+  def edit
+  end
+
+  def update
+    if current_user.update(user_params)
+      redirect_to mypages_path
+    else
+      render :edit
+    end
+  end
+  
+  private
+
+  def user_params
+    params.require(:user).permit(:name, :email)
   end
 end

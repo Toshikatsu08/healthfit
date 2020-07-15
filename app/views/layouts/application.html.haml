@@ -14,6 +14,6 @@
       .RightGroup  
         = link_to messages_path, class: "RightGroup__baButton" do
           B.A
-        = link_to messages_path, class: "RightGroup__myphots" do
+        = link_to new_message_path, class: "RightGroup__myphots" do
           = icon('far', 'image', class: 'RightGroup__icon')
     = yield

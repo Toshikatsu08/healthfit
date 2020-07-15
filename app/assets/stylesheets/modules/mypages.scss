@@ -2,9 +2,19 @@
   height: 70px;
   background-color: whitesmoke;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  &__userName {
+    font-size: 20px;
+    padding-left: 5px;
+  }
   &__topmessage {
     font-size: 40px;
-    text-align: center;
+  }
+  &__edit {
+    font-size: 20px;
+    padding-right: 5px;
+    text-decoration: none;
   }
 }
 .BottomContents {
