@@ -1,6 +1,11 @@
 .UpperContents
+  .UpperContents__userName
+    = current_user.name
   .UpperContents__topmessage
     体重の変化
+  .UpperContents__edit
+    = link_to edit_user_path(current_user) do
+      = icon('fas', 'cog')
 = line_chart @chart, width: "900px", height: "500px"
 .BottomContents
   .BottomContents__left
