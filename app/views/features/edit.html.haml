@@ -1,0 +1,8 @@
+.Main__Contents
+  = form_with model: @feature, url: feature_path, method: :patch,local: true do |f|
+    = f.number_field :length, placeholder: '身長'
+    = f.number_field :weight, placeholder: '体重'
+    = f.number_field :age, placeholder: '年齢'
+    = f.number_field :goalweight, placeholder: '目標体重'
+    = f.datetime_field :goaldate, placeholder: '目標日'
+    = f.submit '送信'

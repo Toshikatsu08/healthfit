@@ -12,8 +12,8 @@
       = link_to root_path, class: "Header__topButton" do
         HealthFit
       .RightGroup  
-        = link_to messages_path, class: "RightGroup__baButton" do
+        = link_to messages_path(current_user), class: "RightGroup__baButton" do
           B.A
-        = link_to new_message_path, class: "RightGroup__myphots" do
+        = link_to new_message_path(current_user), class: "RightGroup__myphots" do
           = icon('far', 'image', class: 'RightGroup__icon')
     = yield

@@ -1,0 +1,21 @@
+.UpperContents
+  .UpperContents__userName
+    = current_user.name
+  .UpperContents__topmessage
+    体重の変化
+  .UpperContents__rightField
+    .UpperContents__information
+      = link_to edit_user_path(current_user), class: 'Buttons' do
+        = icon('fas', 'cog')
+      = link_to edit_feature_path(current_user), class: 'Buttons' do
+        編集
+      = link_to new_feature_path(current_user), class: 'Buttons' do
+        登録
+      
+= line_chart Feature.pluck(:created_at, :weight, :goalweight), width: "1200px", height: "500px"
+.BottomContents
+  = render partial: "feature", collection: @features
+.BottomMain
+  %form.BottomMain__Weight
+    %input.weightBtn{url: '#', type: 'number', placeholder: '今日の体重を入力'}
+    %input.submitBtn{url: '#', type: 'submit', value: '登録する'}
