@@ -1,0 +1,9 @@
+.BottomContents__left
+  %p= "目標 #{feature.goalweight} kg"
+  %p= "現在 #{feature.weight} kg"
+  %p= "残り #{feature.weight - feature.goalweight}kg"
+
+.BottomContents__right
+  %p= "基礎代謝 #{13.4 * feature.weight + 4.8 * feature.length - 5.677 * feature.age + 88.362} kcal"
+  %p 1日の目安 1300kcal
+  %p= "目標まであと #{feature.goaldate} 日"
