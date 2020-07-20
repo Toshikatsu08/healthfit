@@ -12,10 +12,9 @@
       = link_to new_feature_path(current_user), class: 'Buttons' do
         登録
       
-= line_chart Feature.pluck(:created_at, :weight, :goalweight), width: "1200px", height: "500px"
+= line_chart @chart, ytitle: "Weight", discrete: true, width: "100%", height: "500px"
 .BottomContents
   = render partial: "feature", collection: @features
 .BottomMain
-  %form.BottomMain__Weight
-    %input.weightBtn{url: '#', type: 'number', placeholder: '今日の体重を入力'}
-    %input.submitBtn{url: '#', type: 'submit', value: '登録する'}
+  =link_to new_feature_weight_path(current_user) do
+    %input.Link{ type: 'button', value: '今日の体重を入力' }

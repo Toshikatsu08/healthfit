@@ -1,0 +1,5 @@
+.Main
+  .Main__Contents
+    = form_with model: @weight, url: feature_weights_path, method: :post, html: {class: "BottomMain__Weight"}, local: true do |f|
+      = f.number_field :dailyweight, class: 'weightBtn', placeholder: '今日の体重を入力'
+      = f.submit '登録する', class: 'submitBtn'

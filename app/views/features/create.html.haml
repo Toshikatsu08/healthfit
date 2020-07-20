@@ -2,5 +2,5 @@
   .ContentsRow__success
     登録が完了しました
   .ContentsRow__back
-    = link_to features_path do
+    = link_to features_path(current_user.id) do
       マイページへ戻る
