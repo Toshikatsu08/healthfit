@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_15_065051) do
+ActiveRecord::Schema.define(version: 2020_07_19_055404) do
 
   create_table "features", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "length"
@@ -47,5 +47,17 @@ ActiveRecord::Schema.define(version: 2020_07_15_065051) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "weights", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "dailyweight"
+    t.bigint "user_id"
+    t.bigint "feature_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["feature_id"], name: "index_weights_on_feature_id"
+    t.index ["user_id"], name: "index_weights_on_user_id"
+  end
+
   add_foreign_key "messages", "users"
+  add_foreign_key "weights", "features"
+  add_foreign_key "weights", "users"
 end
