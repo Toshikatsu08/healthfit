@@ -68,3 +68,32 @@
   padding: 5px;
   margin-top: 10px;
 }
+
+.TopMessage {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.message {
+  font-size: 30px;
+  color: white;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: image-url('image.jpg');
+  &__Contents {
+    margin: 20px;
+    padding: 10px;
+  }
+}
+.input {
+  padding: 5px;
+  margin: 15px;
+  display: flex;
+  border: 2px solid;
+}

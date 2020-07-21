@@ -2,8 +2,10 @@
   .TopContents__BackgroundImage
     = image_tag 'image.jpg', alt: 'run', height: '100%', width: '100%', class: 'image'
   .TopContents__message
-    毎日を楽しく
+    楽しく生きる
+  .TopContents__submessage
+    毎日の体重を管理しよう
 .Main
   .Main__Contents
     =link_to features_path(current_user) do
-      %input.Link{ type: 'button', value: '始まり' }
+      %input.Link{ type: 'button', value: 'さあ、始めよう' }

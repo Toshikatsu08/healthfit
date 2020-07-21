@@ -10,9 +10,8 @@
       = link_to edit_feature_path(current_user), class: 'Buttons' do
         編集
       = link_to new_feature_path(current_user), class: 'Buttons' do
-        登録
-      
-= line_chart @chart, ytitle: "Weight", discrete: true, width: "100%", height: "500px"
+        登録      
+= line_chart @chart, discrete: true, width: "100%", height: "500px"
 .BottomContents
   = render partial: "feature", collection: @features
 .BottomMain

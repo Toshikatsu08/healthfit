@@ -1,8 +1,11 @@
-.Main__Contents
-  = form_with model: @feature,local: true do |f|
-    = f.number_field :length, placeholder: '身長'
-    = f.number_field :weight, placeholder: '体重'
-    = f.number_field :age, placeholder: '年齢'
-    = f.number_field :goalweight, placeholder: '目標体重'
-    = f.datetime_field :goaldate, placeholder: '目標日'
-    = f.submit '送信'
+.TopMessage
+  %h1.message 新規登録
+.Form
+  .Form__Contents
+    = form_with model: @feature, class: 'Form_input', local: true do |f|
+      = f.number_field :length, placeholder: '身長', class: 'input'
+      = f.number_field :weight, placeholder: '体重', class: 'input'
+      = f.number_field :age, placeholder: '年齢', class: 'input'
+      = f.number_field :goalweight, placeholder: '目標体重', class: 'input'
+      = f.datetime_field :goaldate, placeholder: '目標日', class: 'input'
+      = f.submit '登録', class: 'input'
