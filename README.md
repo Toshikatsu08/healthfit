@@ -1,24 +1,18 @@
-# README
+![スクリーンショット 2020-08-17 17 53 08](https://user-images.githubusercontent.com/67052090/90377147-847ff400-e0b2-11ea-9511-b5f591e042fb.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# このアプリについて
+## アプリ名
+HealthFit
+## 説明
+* 毎日の体重をグラフで管理します    
+* コミュニティ機能によりユーザー同士であなたの目標達成をサポートします
+## 使い方
+* 体重管理機能  
+①Name,EmailとPasswordを入力しサインアップしてください  
+②トップページの「さあ、始めよう」をクリックすると体重管理画面が表示されます  
+③体重管理画面の「登録」ボタンを押し、あなたの身体データを入力してください  
+④体重管理画面の「今日の体重を入力」をクリックし毎日の体重を入力します  
+⑤体重が折れ線グラフになって表示されます  
+* コミュニティー機能
