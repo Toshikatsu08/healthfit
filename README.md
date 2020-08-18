@@ -1,14 +1,12 @@
 ![スクリーンショット 2020-08-17 17 53 08](https://user-images.githubusercontent.com/67052090/90377147-847ff400-e0b2-11ea-9511-b5f591e042fb.png)
 
-
-
 # このアプリについて
 ## :earth_asia:アプリ名
 HealthFit  
 ## :earth_asia:URL
-http://175.41.200.113/  
-ログイン用email： test@test  
-ログイン用password: test1234
+* http://175.41.200.113/  
+* ログイン用email： test@test  
+* ログイン用password: test1234
 ## :earth_asia:説明
 * 毎日の体重をグラフで管理します    
 * コミュニティ機能によりユーザー同士であなたの目標達成をサポートします
