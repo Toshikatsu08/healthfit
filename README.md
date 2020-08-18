@@ -5,8 +5,8 @@
 HealthFit  
 ## :earth_asia:URL
 * http://175.41.200.113/  
-* ログイン用email： test@test  
-* ログイン用password: test1234
+* ログイン用email     : test@test  
+* ログイン用password  : test1234
 ## :earth_asia:説明
 * 毎日の体重をグラフで管理します    
 * コミュニティ機能によりユーザー同士であなたの目標達成をサポートします
