@@ -47,3 +47,45 @@ AWSのEC2/S3を使ったデプロイ
 * メッセージ送信時の非同期通信
 ＊ SNSのAPIを使ったユーザー新規登録・ログイン機能  
 
+# :earth_asia:DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+### Association
+- has_many :messages
+- has_many :weights
+- has_many :features
+
+## messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|content|string|
+|image|string|
+|user_id|references|foreign_key: true|
+### Association
+- belongs_to :user
+
+## featuresテーブル
+|Column|Type|Options|
+|------|----|-------|
+|length|integer|
+|weight|integer|
+|age|integer|
+|goalweight|inreger|
+|goaldate|inreger|
+|user_id|references|foreign_key: true|
+### Association
+- has_many :weights
+
+## featuresテーブル
+|Column|Type|Options|
+|------|----|-------|
+|dailyweight|integer|
+|user_id|references|foreign_key: true|
+|feature_id|references|foreign_key: true|
+### Association
+- belongs_to :user
+- belongs_to :feature
