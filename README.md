@@ -22,10 +22,12 @@ http://175.41.200.113/
 ④「今日の体重を入力」を押して毎日の体重を入力します  
 ⑤ 体重が折れ線グラフになって表示されます  
 
-![6bb0a2f60a000078fdce9d3f6ba2fa1b](https://user-images.githubusercontent.com/67052090/90469452-d3319a80-e153-11ea-9f8d-211980d1d387.gif)
+[![Image from Gyazo](https://i.gyazo.com/6c631841d14e60fc8268309ff4cafee7.gif)](https://gyazo.com/6c631841d14e60fc8268309ff4cafee7)
 ### コミュニティー機能  
 ① ヘッダー右上の「B.A」を押すとチャット画面が表示されます  
-② ヘッダー右上の写真アイコンを押すとメッセージや画像を送信できます
+② ヘッダー右上の写真アイコンを押すとメッセージや画像を送信できます  
+
+[![Image from Gyazo](https://i.gyazo.com/7e371b51a876adaff9179a7db3fcd341.gif)](https://gyazo.com/7e371b51a876adaff9179a7db3fcd341)
 ## :earth_asia:主な使用技術  
 ruby '2.6.5'  
 rails '6.0.0'  
