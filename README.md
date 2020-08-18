@@ -12,6 +12,7 @@ http://175.41.200.113/
 * コミュニティ機能によりユーザー同士であなたの目標達成をサポートします
 ## :earth_asia:制作背景  
 「体重を管理できるものがあったら使いたい」  
+
 母親と妹の声を形にしたのが今回のアプリです。  
 ダイエットがいつも続かない人におすすめ。
 ## :earth_asia:使い方
@@ -29,29 +30,30 @@ http://175.41.200.113/
 
 [![Image from Gyazo](https://i.gyazo.com/7e371b51a876adaff9179a7db3fcd341.gif)](https://gyazo.com/7e371b51a876adaff9179a7db3fcd341)
 ## :earth_asia:主な使用技術  
-ruby '2.6.5'  
-rails '6.0.0'  
-mysql2  
-Haml/Scss  
-gem 'chartkick'  
-gem 'devise'  
-gem 'carrierwave'  
-gem 'capistrano'  
-AWSのEC2/S3を使ったデプロイ  
-アプリケーションサーバー: unicorn  
-ウェブサーバー: nginx  
+* ruby '2.6.5'  
+* rails '6.0.0'  
+* mysql2  
+* Haml/Scss  
+* gem 'chartkick'  
+* gem 'devise'  
+* gem 'carrierwave'  
+* gem 'capistrano'  
+* AWSのEC2/S3を使ったデプロイ  
+* アプリケーションサーバー: unicorn  
+* ウェブサーバー: nginx  
 ## :earth_asia:工夫した点
 * gem 'chartkick'を使ったグラフ表示  
 始めて使ったgemでしたが、うまくDBから情報を引っ張ってくることができました。
 * 基礎代謝計算  
 入力された身体データから基礎代謝を算出しています
 ## :earth_asia:課題・今後実装したい機能  
-* メッセージに対するコメント機能  
+* コメント機能  
 * 「いいね！」機能  
 * グラフに目標体重のボーダーラインを表示させる  
 * メッセージ送信時の非同期通信  
 * SNSのAPIを使ったユーザー新規登録・ログイン機能  
 * 目標までの残り日数を正しく表示させる  
+* 細かいビューの修正
 
 # :earth_asia:DB設計
 ## usersテーブル
